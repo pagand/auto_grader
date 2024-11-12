@@ -168,8 +168,6 @@ def load_and_run_tests(base_folder):
     results = []
 
     for filename in os.listdir(base_folder):
-        if filename == "q3_sample.py":
-            a=1
         # Full path of the Python file
         file_path = os.path.join(base_folder, filename)
         
@@ -211,7 +209,7 @@ def load_and_run_tests(base_folder):
     # sort values by Name
     df = df.sort_values(by='Name')
     # save to a csv file
-    df.to_csv('./A1/results.csv', index=False)
+    df.to_csv('./results.csv', index=False)
 
 if __name__ == '__main__':
     base_folder = "./all/"  # Folder where 'name 1', 'name 2', etc., are located
